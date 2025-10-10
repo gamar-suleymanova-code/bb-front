@@ -22,7 +22,7 @@ const Dashboard = lazy(() => import('./pages/Dashboard'));
 
 const router = createBrowserRouter([
   {
-    path: "/BudgetBuddy",
+    path: "/bb-front",
     element: <Layout />, // This will render Nav, Footer, and dynamically loaded content
     children: [
       {
