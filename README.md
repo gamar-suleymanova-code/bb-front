@@ -1,1 +1,1 @@
-# bb-front
+BudgetBuddy is a user-friendly savings app designed to help individuals track their expenses and income. With intuitive features for adding and managing transactions, BudgetBuddy allows users to monitor their daily, weekly, and monthly spending habits. The app includes visual charts to provide insights into financial trends and aids users in achieving their savings goals. Currently, I'm working on the front end deveopment of the project, so other links are not yet provided.

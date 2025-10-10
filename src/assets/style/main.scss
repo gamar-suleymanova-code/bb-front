@@ -1,0 +1,252 @@
+$main: #278CC5;
+$light: #F0F2F1;
+$dark: #14171D;
+$darkBlue: #3A4156;
+$complimentary: #0F4A3D;
+$mainGradient: linear-gradient(90deg,
+        rgba(240, 242, 241, 0.16) 0%,
+        rgba(58, 65, 86, 0.06) 96%);
+$dangerGradient: linear-gradient(90deg,
+        rgba(95, 19, 33, 1) -32%,
+        rgba(197, 39, 68, 1) 24%);
+$danger: #C52744;
+$white: #ffffff;
+$mainShadow: 0px 4px 4px 0px rgba(58, 65, 86, 0.18);
+$dangerShadow: 0px 4px 4px 0px rgba(197, 39, 68, 0.18);
+$mainShadowOnHover: 0px 0px 4px 0px rgba(58, 65, 86, 0.18);
+$mainTShadow: 4px 4px 4px rgba(58, 65, 86, 0.18);
+$dropShadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.25);
+$semiBold: 500;
+$px12: calc(1rem - 4px);
+$px18: calc(1rem + 2px);
+$px21_33: calc(1rem + 5.33px);
+$px48: calc(1rem + 32px);
+$px24: calc(1rem + 8px);
+$px32: calc(1rem + 16px);
+$px36: calc(1rem + 20px);
+$px37_9: calc(1rem + 21.9px);
+$px28_43: calc(1rem + 12.43px);
+$transition: all .24s ease;
+/* fonts */
+#root {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* Meyer's Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input {
+    min-height: 48px;
+    min-width: 48px;
+}
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-weight: $semiBold;
+    margin-bottom: 0;
+}
+h4, .h4 { font-size: $px37_9; }
+h5, .h5 { font-size: $px28_43; }
+h6, .h6 { font-size: $px21_33; }
+
+.text_md { font-size: 1rem; }
+.text_sm { font-size: $px12; }
+
+.fw_semiBold { font-weight: $semiBold; }
+/* flex */
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gap_12px { gap: $px12; }
+.gap_18px { gap: $px18; }
+.gap_24px { gap: $px24; }
+/* rounded */
+.rounded_12px { border-radius: 12px; }
+.rounded_18px { border-radius: 18px; }
+/* shadows */
+.shadow_Tmain { text-shadow: $mainTShadow }
+.shadow_drop { box-shadow: $dropShadow; }
+.shadow_main { box-shadow: $mainShadow; }
+.shadow_m3Light { box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15), 0px 2px 6px rgba(0, 0, 0, 0.1); }
+/* padding & margin */
+.form_p {
+    padding-inline: $px24;
+    padding-top: $px18;
+    padding-bottom: $px32;
+}
+.px_18px { padding-inline: $px18; }
+.px_36px { padding-inline: $px36; }
+.px_24px { padding-inline: $px24; }
+.py_12px { padding-block: $px12; }
+.p_12px { padding: $px12; }
+.py_24px { padding-block: $px24; }
+.pt_12px { padding-top: $px12; }
+.pt_18px { padding-top: $px18; }
+.pt_36px { padding-top: $px36; }
+.pt_48px { padding-top: $px48; }
+.pb_12px { padding-bottom: $px12; }
+.pb_24px { padding-bottom: $px24; }
+.my_12px { margin-block: $px12; }
+.mb_12px { margin-bottom: $px12; }
+.mt_36px { margin-top: $px36; }
+.mb_18px { margin-bottom: $px18; }
+.pb_18px { padding-bottom: $px18; }
+/* others */
+.minh-inherit { min-height: inherit; }
+.transition_default { transition: $transition; }
+.overflow_unset { overflow: unset; }
+.object_top { object-position: top; }
+.hidden { visibility: hidden; }
+.z_index_-1 { z-index: -1; }
+.z_index_1 { z-index: 1; }
+.text_balance { text-wrap: balance; }
+/* elements */
+.default_btn {
+    height: $px48;
+    padding-inline: $px12;
+    border: none;
+    background-color: transparent;
+}
+
+.btn_link {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+}
+.btn_link:hover,
+.btn_link:focus,
+.btn_link:focus-visible { text-decoration: none; }
+.input_style {
+    background: $mainGradient;
+    box-shadow: $mainShadow;
+    border: none;
+    color: $darkBlue;
+}
+.input_style,
+.input_style:focus,
+.input_style:focus-visible,
+.input_style:hover {
+    outline: none;
+}
+.formControl[data-invalid] .chakra-form__error-message {
+    color: $danger;
+}
+.formControl[data-invalid] .input_style {
+    box-shadow: $dangerShadow;
+}
+.formControl {
+    position: relative;
+}
+.formControl .form_error {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.default_btn:hover,
+.default_btn:focus-visible,
+.default_btn:focus,
+
+.btn_link:hover,
+.btn_link:focus,
+.btn_link:focus-visible {
+    border: none;
+    outline: none;
+}
+.input_style:focus,
+.input_style:focus-visible {
+    background: $white;
+}
+.input_style:focus,
+.input_style:focus-visible,
+.input_style:hover,
+
+.shadow_on_state:hover,
+.shadow_on_state:focus-visible,
+.shadow_on_state:focus {
+    box-shadow: $mainShadowOnHover;
+}
+.default_btn,
+.input_style,
+.input_style,
+.btn_link {
+    transform: scale(1);
+}
+.default_btn:hover,
+.default_btn:focus-visible,
+.default_btn:focus,
+.input_style:hover,
+.input_style:focus,
+.input_style:focus-visible,
+.btn_link:hover,
+.btn_link:focus,
+.btn_link:focus-visible {
+    transform: scale(.98);
+}
+
+
+/* FlipFlop */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: $transition;
+    transform-style: preserve-3d;
+}
+.flip-card.register_active .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+.flip-card-back { transform: rotateY(180deg); }
+/* colors */
+.c_darkBlue { color: $darkBlue; }
+.c_light { color: $light; }
+.c_main { color: $main; }
+
+.bg_main { background: $main; }
+.bg_white {background-color: white;}
+.bg_mainGradient { background: $mainGradient; }
+
+.w_fit { width: fit-content; }
+
+
+
+.step-indicators {
+    display: flex;
+    gap: 1rem;
+}
+.step {
+width: 2rem;
+height: 3px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: $light;
+}
+.step.active {
+background-color: $main;
+color: var(--white);
+}
