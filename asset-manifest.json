@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/bb-front/static/css/main.d4e65a6a.css",
-    "main.js": "/bb-front/static/js/main.f86ce713.js",
+    "main.js": "/bb-front/static/js/main.4320acf3.js",
     "static/css/714.c8d08aa9.chunk.css": "/bb-front/static/css/714.c8d08aa9.chunk.css",
     "static/js/714.e18188c1.chunk.js": "/bb-front/static/js/714.e18188c1.chunk.js",
-    "static/js/128.f8a11fde.chunk.js": "/bb-front/static/js/128.f8a11fde.chunk.js",
+    "static/js/128.a78a6c92.chunk.js": "/bb-front/static/js/128.a78a6c92.chunk.js",
     "static/js/479.0a878e89.chunk.js": "/bb-front/static/js/479.0a878e89.chunk.js",
     "static/js/453.d0506cb9.chunk.js": "/bb-front/static/js/453.d0506cb9.chunk.js",
     "static/js/903.be511ccd.chunk.js": "/bb-front/static/js/903.be511ccd.chunk.js",
@@ -19,16 +19,16 @@
     "static/media/slick.woff": "/bb-front/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/bb-front/index.html",
     "main.d4e65a6a.css.map": "/bb-front/static/css/main.d4e65a6a.css.map",
-    "main.f86ce713.js.map": "/bb-front/static/js/main.f86ce713.js.map",
+    "main.4320acf3.js.map": "/bb-front/static/js/main.4320acf3.js.map",
     "714.c8d08aa9.chunk.css.map": "/bb-front/static/css/714.c8d08aa9.chunk.css.map",
     "714.e18188c1.chunk.js.map": "/bb-front/static/js/714.e18188c1.chunk.js.map",
-    "128.f8a11fde.chunk.js.map": "/bb-front/static/js/128.f8a11fde.chunk.js.map",
+    "128.a78a6c92.chunk.js.map": "/bb-front/static/js/128.a78a6c92.chunk.js.map",
     "479.0a878e89.chunk.js.map": "/bb-front/static/js/479.0a878e89.chunk.js.map",
     "453.d0506cb9.chunk.js.map": "/bb-front/static/js/453.d0506cb9.chunk.js.map",
     "903.be511ccd.chunk.js.map": "/bb-front/static/js/903.be511ccd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4e65a6a.css",
-    "static/js/main.f86ce713.js"
+    "static/js/main.4320acf3.js"
   ]
 }
