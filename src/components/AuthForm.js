@@ -46,10 +46,10 @@ export default function AuthForm({ isLogin }) { // isLogin defines if it's a log
             dispath(seUserAuthorized(true));
             if(isLogin) {
                 // navigate to dashboard
-                navigate('/BudgetBuddy/dashboard');
+                navigate('/bb-front/dashboard');
             } else {
                 // navigate to newUser page
-                navigate('/BudgetBuddy/greeting');
+                navigate('/bb-front/greeting');
             }
         }
     });

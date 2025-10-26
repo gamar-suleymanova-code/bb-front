@@ -116,7 +116,7 @@ const Step1 = ({ nextStep, setFormData }) => {
             console.log(values);
   
             setTimeout(() => {
-              navigate('/BudgetBuddy/dashboard');
+              navigate('/bb-front/dashboard');
             }, 2400);
         }
     });
